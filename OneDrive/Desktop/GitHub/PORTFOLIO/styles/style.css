@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+:root {
+    --green-color: rgb(124, 255, 76);
+    --default-color: white;
+    --header-size:30pt;
+    --about-size: 11pt; 
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #140f19;
+    margin: 0;
+}
+
+header {
+    height: 68px;
+    width: 100%;
+    background: #263238;
+}
+
+.inside-header {
+    margin: auto;
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo big {
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigate li {
+    padding: 0px 24px;
+    display: inline-block;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navigate ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navigate ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navigate ul li a.active {
+    color: white;
+}
+
+.navigate ul li a:hover::after {
+    width: 100%;
+}
+
+.navigate i {
+    font-size: 1.7rem;
+    color: white;
+    display: none;
+}
+
+.cover-page {
+    height: 90svh;
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+.hero-img{
+    width: 48%;
+}
+.hero-img img{
+    pointer-events: none;
+}
+.my-info {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.heading h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: white;
+    line-height: -1px;
+    letter-spacing: .5px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.heading h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+
+#name {
+    color: rgb(124, 255, 76);
+}
+
+.heading p {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 22px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    width: 135px;
+    height: 42px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 5px;
+    color: #000000;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.border-btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.border-btn i{
+    font-size: 16px;
+}
+/* about-section */
+.about-myself {
+    margin: auto;
+    width: 83%;
+    height: 80vh;
+    /* background-color: #14d0ef; */
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.ab-left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    flex-direction: column;
+    height: 90%;
+}
+
+.non-active {
+    display: none;
+}
+
+.head-about {
+    align-self: flex-start;
+}
+
+.head-about h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4rem;
+    color: white
+}
+
+.myself-about {
+    width: 100%;
+    color: white;
+}
+
+.myself-about h3 {
+    color: rgb(124, 255, 76);
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.myself-about p {
+    /* height: 60%; */
+    /* margin-top: -10px; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 85%;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(124, 255, 76);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 16px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.tab-contents ul li span {
+    color: rgb(124, 255, 76);
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.ab-right {
+    height: 80%;
+    /* background-color: white; */
+}
+.ab-right img{
+    pointer-events: none;
+}
+.ab-right img {
+    border-radius: 0 22px 22px 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my-skills {
+    height: 60vh;
+    margin: auto;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* margin-top: 30px; */
+    align-items: center;
+}
+
+.my-skills h1 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: var(--header-size);
+}
+
+.row-1 {
+    height: 90%;
+    /* background-color: aliceblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.box {
+    height: 90%;
+    border-radius: 4px;
+    padding: 5px 20px;
+    background-color: #292F3FC7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.logo i {
+    font-size: 4vw;
+}
+
+.df-bg {
+    background: rgba(0, 255, 64, 0.43);
+}
+
+.mid-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+
+}
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+
+.my-project {
+    margin: auto;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 50px;
+    /* background: #000; */
+}
+
+#udp {
+    font-size: 15pt;
+}
+
+.my-project h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: var(--header-size);
+}
+
+.proj {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.row-2 {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.pro-pic {
+    width: 32%;
+}
+
+.pro-pic img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+/* .two,.three,.four{
+    background-color: white;
+} */
+
+.about-pro {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    color: rgb(124, 255, 76);
+    letter-spacing: 2px;
+}
+
+.name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.elab {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    line-height: 20px;
+}
+
+.elab h4 {
+    color: rgb(124, 255, 76);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.elab h4 a {
+    text-decoration: none;
+    color: rgb(124, 255, 76);
+    font-weight: 500;
+}
+
+.experience-sec {
+    margin: auto;
+    margin-top: 30px;
+    /* background-color: #0d0dcc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    width: 80%;
+    /* background-color: #0e1d5f; */
+}
+
+.experience-sec h1 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: var(--header-size);
+}
+
+.center-skill {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.container {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-bot {
+    /* background-color: rgb(0, 0, 0); */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .exp-bot:hover{
+    background: #070770;
+    border-radius: 8px;
+    z-index: -1;
+    cursor: pointer;
+    transform: translateY(-20px);
+} */
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: white;
+    font-size: .6rem;
+}
+
+.bar {
+    margin-top: 2px;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.in-bar {
+    display: block;
+    height: 5px;
+    z-index: 2;
+    border-radius: 4px;
+    background-color: #4daa58;
+}
+
+.python {
+    width: 75%;
+}
+
+.java {
+    width: 80%;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.js {
+    width: 75%;
+}
+
+.sql {
+    width: 70%;
+}
+
+
+.contact-me {
+    height: fit-content;
+    width: 83%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sub-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.contact-left {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 26pt;
+    align-items: flex-start;
+}
+
+.contact-left .fa-solid {
+    font-size: 1.1rem;
+    margin-right: 7px;
+    /* color: aqua; */
+}
+
+.contact-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+}
+
+.social-icons .fa-brands {
+    margin: 0px 10px;
+    font-size: 30px;
+    color: white;
+    transition: transform .4s;
+}
+.contact-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contact-right form {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#max-set {
+    resize: none;
+}
+
+form input,
+form textarea {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border: 0;
+    background-color: #0000005c;
+    padding: 14px;
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: .9rem;
+    border-radius: 6px;
+    resize: none;
+}
+
+.social-icons .no-margin {
+    margin-left: 0px;
+}
+
+.sub {
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+#msg {
+    font-family: 'Poppins', sans-serif;
+    color: #34ce19;
+    margin-top: 5px;
+    display: block;
+}
+
+.cop {
+    height: 68px;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cop p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cop p i {
+    color: red;
+}

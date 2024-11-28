@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Faiz | Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6abd167009.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="inside-header">
+            <div class="logo">
+                <a href=""><img src="img/md.png" alt="" width="65px"></a>
+            </div>
+            <div class="navigate">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="cover-page" id="home">
+            <div class="hero-img"><img src="img/Developer activity-pana.svg" alt="" width="100%"></div>
+            <div class="my-info">
+                <div class="heading">
+                    <h4>Hi, There!</h4>
+                    <h1>I'm <span id="name">Mohammad Faiz</span></h1>
+                    <p>A true enthusiast and passionate developer whose heart beats in sync with lines of code. With an
+                        insatiable curiosity for technology and a relentless drive to innovate, fuelled by the joy of
+                        bringing ideas to life.</p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.linkedin.com/in/mohammad-faiz-developer/" target="_blank"><button class="button">CONNECT<i class="fa-solid fa-user-plus"></i></button></a>
+                    <a href="https://github.com/Mohd-FaiZ-Jr" target="_blank"><button class="button border-btn">GITHUB <i class="fa-brands fa-github"></i></button></a>
+                </div>
+            </div>
+    </section>
+    <section class="about-myself" id="about">
+        <div class="ab-left">
+            <div class="head-about">
+                <h1>About Me</h1><br>
+            </div>
+            <div class="myself-about">
+                <h3>A <span id="element"></span></h3>
+                <p>Hi, I am Mohammad Faiz, a second year student passionately pursuing bachelor's degree, carving a
+                    path to knowledge and growth. I am passionate about my work, with a strong interest in design and a
+                    drive for building innovative solutions.</p>
+                <div class="tab-titles">
+                    <h4 class="tab-links active-link" onclick="opentab('experience')">Experience</h4>
+                    <h4 class="tab-links" onclick="opentab('education')">Education</h4>
+                    <h4 class="tab-links" onclick="opentab('hobby')">Hobby</h4>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Interface.</li>
+                        <li><span>Web Development</span><br>Web app development.</li>
+                        <li><span>Video Editing</span><br>Sculpting raw footages.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Current</span><br>B.Tech in CSE from ITER.</li>
+                        <li><span>2022</span><br>Sr. Secondary from AECS Jadugoda.</li>
+                        <li><span>2020</span><br>Secondary from AECS Turamdih, Jsr.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobby">
+                    <ul>
+                        <li><span>Chess</span><br>Strategist calculated brilliance.</li>
+                        <li><span>Gaming</span><br>Unleasing stress.</li>
+                        <li><span>Cooking</span><br>Flavors crafted artfully.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ab-right">
+            <img src="img/personal-pic.jpg" alt="" height="100%" width="100%">
+        </div>
+    </section><br><br>
+    <section class="my-skills" id="services">
+        <h1>SERVICES</h1>
+        <div class="row-1">
+            <div class="box">
+                <div class="logo"><i class="fa-solid fa-paintbrush"></i></div>
+                <div class="mid-text">UI / UX Design</div>
+                <div class="about">Crafting intuitive UI/UX designs, ensuring seamless interactions and visually appealing experiences for digital products and services.
+                </div>
+            </div>
+            <div class="box df-bg">
+                <div class="logo"><i class="fa-solid fa-code"></i></div>
+                <div class="mid-text">Website Development</div>
+                <div class="about">Meld innovation, design, and functionality.Infusing creativity and code to shape
+                    user-centric websites that captivate and connect.</div>
+            </div>
+            <div class="box">
+                <div class="logo"><i class="fa-solid fa-crop"></i></div>
+                <div class="mid-text">Video Editing</div>
+                <div class="about">Sculpting raw footage with finesse, merging visuals and sound, crafting
+                    narratives that captivate, inform, and resonate.</div>
+            </div>
+        </div>
+    </section><br><br>
+    <section class="experience-sec property-lt" id="skills">
+        <h1>SKILLS</h1>
+        <div class="center-skill">
+            <div class="exp-bot">
+                <div class="container">
+                    <div class="top">
+                        <h2>Java</h2>
+                        <h2>80%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar java"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <h2>Python</h2>
+                        <h2>75%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar python"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <h2>HTML</h2>
+                        <h2>90%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar html"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-bot m-up">
+                <div class="container">
+                    <div class="top">
+                        <h2>CSS</h2>
+                        <h2>85%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar css"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <h2>Javascript</h2>
+                        <h2>75%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar js"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <h2>MY SQL</h2>
+                        <h2>70%</h2>
+                    </div>
+                    <div class="bar">
+                        <span class="in-bar sql"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+    <section class="my-project property-lt" id="projects">
+        <span>
+            <h1>PROJECTS</h1>
+        </span>
+        <div class="proj">
+            <div class="row-2 upside-down">
+                <div class="pro-pic one">
+                    <img src="img/P-12.png" alt="">
+                </div>
+                <div class="about-pro">
+                    <div class="num">PROJECT 1</div>
+                    <div class="name">WhatsApp Message Scheduler</div>
+                    <div class="elab">The fusion of Python's versatility and MySQL's robust database management crafts a
+                        dynamic synergy. From user-friendly designs to data-driven interactions, it's an embodiment of
+                        technology at its finest.
+                        <h4><a href="https://github.com/Mohd-FaiZ-Jr/whatsapp-message-scheduler" target="_blank">Read
+                                more <i class="fa-solid fa-arrow-right"></i></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="about-pro">
+                    <div class="num">PROJECT 2 </div>
+                    <div class="name">NoteSpark</div>
+                    <div class="elab">An online note-taking web app, built with pure HTML, CSS, and JavaScript, allows
+                        users to create, access, and delete notes. It uses local storage to save notes directly in the
+                        browser, ensuring data persistence without needing a backend server.
+                        <h4><a href="https://notespark.netlify.app" target="_blank">Visit Website <i
+                                    class="fa-solid fa-arrow-right"></i></a></h4>
+                    </div>
+                </div>
+                <div class="pro-pic two">
+                    <img src="img/notespark.png" alt="">
+                </div>
+            </div>
+            <div class="row-2 upside-down">
+                <div class="pro-pic three"><img src="img/menumare.png" alt="menu-mate"></div>
+                <div class="about-pro">
+                    <div class="num">PROJECT 3</div>
+                    <div class="name">Menu Mate</div>
+                    <div class="elab">Menu Mate is a web app designed for ITER hostel students, providing a daily updated mess menu. It helps students check today's and tomorrow's menu conveniently from their devices.<br>
+                        <h4><a href="https://menumate.netlify.app" target="_blank">Visit Website <i
+                                    class="fa-solid fa-arrow-right"></i></a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+    <section class="contact-me" id="contact">
+        <div class="contact-left">
+            <h1 class="sub-title">CONTACT ME</h1>
+            <p><i class="fa-solid fa-envelope-circle-check"></i> mohdfaizofficial487@gmail.com</p>
+            <p><i class="fa-brands fa-discord" style="font-size: 1.1rem;"></i> zephyr_745</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammad-faiz-developer/" target="_blank"><i
+                        class="fa-brands fa-linkedin no-margin"></i></a>
+                <a href="https://github.com/Mohd-FaiZ-Jr" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" rows="6" placeholder="Message" id="max-set"></textarea>
+                <button type="submit" class="sub">SEND <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section><br><br>
+    <section class="cop">
+        <p id="copyright">Copyright &copy; <span id="year"></span> Made with <i class="fa-solid fa-heart"></i> by FaiZ</p>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['UI/UX Designer', 'Front-End Developer', 'Video Editor'],
+            typeSpeed: 50,
+            loop: true
+        });
+
+        const year = document.getElementById("year");
+        const date = new Date();
+        year.innerText = date.getFullYear();
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypLKp40hZ7GfoGgvGosvOCRwXGmzpRlOqqyszc-eoe10FeNNq1dREz6OYiziP1vWvY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
